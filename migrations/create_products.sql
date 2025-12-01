@@ -1,10 +1,5 @@
--- skapa databas (om ej redan)
 CREATE DATABASE inventory_db;
 
--- byt till inventory_db och kör:
-\c inventory_db
-
--- skapa tabell products
 CREATE TABLE products (
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
@@ -15,5 +10,4 @@ CREATE TABLE products (
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT now()
 );
 
--- Optional: index på category om du filtrerar ofta
 CREATE INDEX idx_products_category ON products (category);
