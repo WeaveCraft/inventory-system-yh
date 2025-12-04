@@ -21,8 +21,8 @@ Följ stegen nedan för att starta projektet lokalt.
 ### Klona projektet
 
 
-git clone <repo-url>
-cd inventory-system
+git clone inventory-system-yh
+cd inventory-system-yh
 
 ## Installera beroenden
 
