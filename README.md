@@ -22,7 +22,7 @@ Följ stegen nedan för att starta projektet lokalt.
 
 
 git clone inventory-system-yh
-cd inventory-system-yh
+cd inventory-system-yh || cd inventory-system-yh-main
 
 ## Installera beroenden
 
@@ -98,6 +98,7 @@ Kör följande kommandos via VS Code terminal.
 node server.js
 
 Servern startar på porten du angivit i .env.
+
 ## Testa API:et i Bruno
 
 I repot finns en mapp:
