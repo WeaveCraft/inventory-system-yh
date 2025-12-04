@@ -21,8 +21,8 @@ Följ stegen nedan för att starta projektet lokalt.
 ### Klona projektet
 
 
-```git clone <repo-url>
-cd inventory-system```
+git clone <repo-url>
+cd inventory-system
 
 ## Installera beroenden
 
@@ -57,13 +57,13 @@ Exempel:
 PORT=3000
 DATABASE_URL=postgres://postgres:myPassword@localhost:5432/inventory_db
 
-🛢️ PostgreSQL – Databasinstallation
+## PostgreSQL – Databasinstallation
 
 Detta projekt kräver att PostgreSQL redan är installerat.
-1️⃣ Starta pgAdmin 4
+ Starta pgAdmin 4
 
 Öppna pgAdmin och logga in.
-2️⃣ Skapa databas
+ Skapa databas
 
     Högerklicka på Databases → Create → Database
 
@@ -71,11 +71,11 @@ Detta projekt kräver att PostgreSQL redan är installerat.
 
     Spara
 
-3️⃣ Kör SQL-skriptet för att skapa tabellen
+## Kör SQL-skriptet för att skapa tabellen
 
 I projektet finns en fil:
 
-/database/schema.sql
+/migrations/create_products.sql
 
 Gör så här:
 
@@ -88,14 +88,17 @@ Gör så här:
     Tryck F5 för att köra skriptet
 
 Det skapar tabellen products som används av API:et.
-▶️ Starta servern
+
+## Starta servern
 
 När .env är klar och databasen finns:
+
+Kör följande kommandos via VS Code terminal.
 
 node server.js
 
 Servern startar på porten du angivit i .env.
-🧪 Testa API:et i Bruno
+## Testa API:et i Bruno
 
 I repot finns en mapp:
 
@@ -111,7 +114,7 @@ Så här testar du API:et:
 
     Kör alla endpoints för att testa CRUD-funktionalitet
 
-📌 Tillgängliga Endpoints
+## Tillgängliga Endpoints
 Produkter
 Metod	Endpoint	Beskrivning
 GET	/products	Hämta alla produkter
