@@ -1,0 +1,26 @@
+meta {
+  name: Put
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3000/products/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Gaming Laptops",
+    "quantity": 5,
+    "price": 15999.00,
+    "category": "electronics"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

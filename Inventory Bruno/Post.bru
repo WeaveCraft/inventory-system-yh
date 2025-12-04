@@ -1,0 +1,25 @@
+meta {
+  name: Post
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/products
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Laptops",
+    "quantity": 10,
+    "price": 14999.99,
+    "category": "electronics"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
