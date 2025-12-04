@@ -1,0 +1,4 @@
+PORT={PORT_NUMBER_HERE}
+DATABASE_URL=postgres://postgres:{PASSWORD_HERE}@localhost:5432/{DB_NAME_HERE}
+
+//Replace curly brackets and everything inside of it "{}" with actual value.
